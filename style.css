@@ -1,0 +1,223 @@
+html {
+    background: #121212;
+    color: #F582A7;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+hr {
+    border: 1px solid #ff0080;
+    width: 80%;
+    margin: 10px auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+h2, h3 {
+    background-color: #211A1E;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #711A75;
+}
+
+h2 {
+    color: #F582A7;
+}
+
+h3 {
+    color: #ff0080;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section p {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.poster img {
+    border: 5px solid #ff0080;
+    border-radius: 10px;
+}
+
+.welcome-section .poster, .offtopic-section .poster {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suggestions-section .suggestion {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.suggestions-section .suggestion img {
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 5px solid #fff;
+}
+
+.suggestions-section .suggestion-details {
+    flex: 1;
+}
+
+.suggestion-details p {
+    margin: 0 0 10px 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .suggestions-section .suggestion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suggestions-section .suggestion img {
+        margin: 0 0 10px 0;
+    }
+
+}
+.movie-recommender-section {
+    margin-bottom: 40px;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.dropdown-container label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #F582A7;
+}
+
+.dropdown {
+    padding: 10px;
+    border: 2px solid #F582A7;
+    border-radius: 5px;
+    background-color: #211A1E;
+    color: #F582A7;
+    font-size: 1rem;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #ff0080;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F582A7;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0080;
+}
+
+.recommendation-result {
+    margin-top: 20px;
+    text-align: center;
+    color: #F582A7;
+}
+.recommendation-result {
+    margin-top: 20px;
+    text-align: center;
+    color: #F582A7;
+}
+
+.movie {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.movie img {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #F582A7;
+}
+
+.movie p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #F582A7;
+}
+
+.instagram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #E1306C; /* Instagram color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.instagram-button:hover {
+    background-color: #C13584; /* Darker shade for hover effect */
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center align if multiple social buttons */
+}

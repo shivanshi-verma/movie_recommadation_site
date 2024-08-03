@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Binge-Movie Recommender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><img src="./images/binge real trans.png" height="100" alt="Binge Logo" class="logo"></h1>
+            <hr>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h2>Welcome to Binge</h2>
+            <div class="poster">
+                <img src="./images/BINGE.gif" alt="Binge Poster" class="center">
+            </div>
+            <p>Welcome to Binge, your ultimate source for discovering the best movies, songs, and much more to satisfy your entertainment cravings! Our Instagram page is dedicated to providing you with handpicked recommendations that will elevate your viewing and listening experience to new heights. Whether you're a dedicated cinephile, a passionate music enthusiast, or simply someone who enjoys the magic of storytelling, Binge has got you covered.</p>
+            <p>Our team of dedicated curators is constantly exploring the vast realms of cinema, music, and beyond to bring you a diverse selection of hidden gems, timeless classics, and trending masterpieces. We believe that every great movie and song has the power to transport you, evoke emotions, and create lasting memories.</p>
+            <p>Immerse yourself in a world of captivating stories, where you can embark on thrilling adventures, explore different cultures, and experience the depths of human emotions. Our curated collection of movies will take you on a journey through various genres, from heartwarming dramas to gripping thrillers, thought-provoking documentaries to mind-bending science fiction. Discover new directors, actors, and cinematography techniques that will leave you awe-inspired.</p>
+            <p>But it doesn't stop there! For music enthusiasts, Binge offers a treasure trove of mesmerizing melodies and unforgettable songs. From chart-topping hits to hidden gems from indie artists, our curated playlist will introduce you to a world of sonic exploration. Whether you're into soothing melodies, energetic beats, soulful ballads, or experimental sounds, Binge is your guide to discovering the sounds that resonate with your soul.</p>
+            <p>Follow Binge on Instagram and unlock a world of audiovisual delights that will keep you hooked. With our carefully selected recommendations, you'll never run out of captivating movies to watch or mesmerizing songs to listen to. Get ready to indulge, explore, and discover your next obsession with Binge!</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/_binge_09/" class="instagram-button" target="_blank">Follow on Instagram</a>            </div>
+        </section>
+
+        <section class="suggestions-section">
+            <h2>Top Pick of the Week</h2>
+            <div class="suggestion">
+                <a href="https://www.instagram.com/p/ChnHFn3D8si/"><img src="./images/GOT.png" height="200" alt="Game of Thrones"></a>
+                <div class="suggestion-details">
+                    <p>R | Genre: Drama, Thriller, Suspense | 8 Seasons</p>
+                    <p>IMDB: 9.2</p>
+                    <p>Game of Thrones, a gripping fantasy epic, captivated audiences with its intricate plot, complex characters, and shocking twists. With remarkable production value and unforgettable moments, it transported viewers to a world of political intrigue, power struggles, and supernatural threats. A cultural phenomenon that will be remembered for years to come.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="suggestion">
+                <a href="https://www.instagram.com/p/CczQv3wjoPq/"><img src="./images/DJANGO.png" height="200" alt="Django Unchained"></a>
+                <div class="suggestion-details">
+                    <p>R | Genre: Drama, Thriller, Western | 165 minutes</p>
+                    <p>IMDB: 8.4</p>
+                    <p>Django Unchained, directed by Quentin Tarantino, is an audacious and unflinching portrayal of the pre-Civil War era. With stellar performances, clever dialogue, and Tarantino's signature style, it tackles themes of racism and vengeance with brutal honesty. A thought-provoking and exhilarating film that leaves a lasting impact.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="suggestion">
+                <a href="https://www.instagram.com/p/Cekp5XtDbpo/"><img src="./images/ABOUT TIME.png" height="200" alt="About Time"></a>
+                <div class="suggestion-details">
+                    <p>R | Genre: Romantic, SCI-FI | 123 minutes</p>
+                    <p>IMDB: 7.2</p>
+                    <p>About Time is a heartfelt and charming romantic comedy with a unique twist. Combining time travel elements with a tender love story, it explores the value of cherishing every moment. With endearing performances, witty writing, and a touching message about embracing life, it's a delightful and uplifting film experience.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="suggestion">
+                <a href="https://www.instagram.com/p/Cfy2s-eh36W/"><img src="./images/UNDER.png" height="200" alt="Under the Banner of Heaven"></a>
+                <div class="suggestion-details">
+                    <p>R | Genre: Crime, Thriller, Suspense | 165 minutes</p>
+                    <p>IMDB: 7.5</p>
+                    <p>Under the Banner of Heaven, based on Jon Krakauer's book, delves into the dark and disturbing world of religious extremism. This thought-provoking documentary explores the complexities of faith, exposing the consequences of fanaticism. With insightful interviews and a gripping narrative, it sheds light on a chilling and little-known reality.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="movie-recommender-section">
+            <h2>Movie Recommender</h2>
+            <div class="dropdown-container">
+                <label for="genre1">Select Genre 1:</label>
+                <select id="genre1" class="dropdown">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="romance">Romance</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+                
+                <label for="genre2">Select Genre 2:</label>
+                <select id="genre2" class="dropdown">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="romance">Romance</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+                
+                <button onclick="recommendMovie()">Get Recommendation</button>
+            </div>
+            <div id="recommendation-result" class="recommendation-result">
+            </div>
+        </section>
+        
+        <hr>
+
+        <section class="offtopic-section">
+            <h3>#OFFTOPIC - Entertainment to a whole new level</h3>
+            <div class="poster">
+                <a href="https://www.instagram.com/stories/highlights/17889813113542485/"><img src="./images/Black and Pink Modern Black Friday Animated Instagram Post.gif" height="300" alt="Offtopic Poster"></a>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
